@@ -1,0 +1,13 @@
+host_config:
+  host: "0.0.0.0"  # Host for running the app.
+  port: 8000   # Port for the app.
+
+cache_options:
+  with_cache: True             # Enable caching for better performance.
+  cache_folder: "./Cache"      # Directory to store cached data.
+
+sources:
+  - local_files:               # Data source is local files.
+    kind: local
+    config:
+      path: "data/"
